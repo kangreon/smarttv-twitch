@@ -199,6 +199,7 @@ function Main_loadTranslations(device) {
 
             if (lang.indexOf('pt_') !== -1) pt_BRLang();
             else if (lang.indexOf('it_') !== -1) it_ITLang();
+            else if (lang.indexOf('ru_') !== -1) ru_RULang();
 
             console.log("language is " + lang);
             DefaultLang();

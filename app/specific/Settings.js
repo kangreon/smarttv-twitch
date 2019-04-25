@@ -2,8 +2,8 @@
 var Settings_cursorY = 0;
 var Settings_value = {
     "general_lang": { //general_lang
-        "values": ["English [EN]", "Italiano [IT]", "Português - Brasil [PT-BR]"],
-        "set_values": ["en_US", "it_IT", "pt_BR"],
+        "values": ["English [EN]", "Italiano [IT]", "Português - Brasil [PT-BR]", "Русский [RU]"],
+        "set_values": ["en_US", "it_IT", "pt_BR", "ru_RU"],
         "defaultValue": 1
     },
     "restor_playback": { //restor_playback
@@ -357,6 +357,7 @@ function Settings_SetLang(lang) {
     if (lang.indexOf('en_') !== -1) en_USLang();
     else if (lang.indexOf('it_') !== -1) it_ITLang();
     else if (lang.indexOf('pt_') !== -1) pt_BRLang();
+    else if (lang.indexOf('ru_') !== -1) ru_RULang();
     DefaultLang();
     Main_SetStringsMain(false);
     Main_SetStringsSecondary();
